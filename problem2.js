@@ -24,16 +24,16 @@ function validEmail(email) {
   return true;
 }
 
-true;
-true;
-false;
-("Invalid");
-true;
-false;
-false;
-("Invalid");
-false;
-false;
+// true;
+// true;
+// false;
+// ("Invalid");
+// true;
+// false;
+// false;
+// ("Invalid");
+// false;
+// false;
 
 // console.log(validEmail("ferdous@gmail.com"));
 // console.log(validEmail("1zihad@gmail.com"));
