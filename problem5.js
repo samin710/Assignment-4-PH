@@ -4,7 +4,7 @@ function calculateWatchTime(times) {
   }
   let sum = 0;
   for (let value of times) {
-    if (!Number.isInteger(value)) {
+    if (typeof value !== "number") {
       return "Invalid";
     }
     sum += value;
@@ -19,9 +19,9 @@ function calculateWatchTime(times) {
   }
 
   return {
-    hour: hour,
-    minute: minute,
-    second: second,
+    hour,
+    minute,
+    second,
   };
 }
 
@@ -32,17 +32,18 @@ function calculateWatchTime(times) {
 // { hour: 1, minute: 33, second: 20 }
 // "Invalid"
 
-console.log(calculateWatchTime([100, 99, 119, 300]));
-console.log(calculateWatchTime([1000, 2000, 725]));
-console.log(calculateWatchTime([100, 3800]));
-console.log(calculateWatchTime([]));
-console.log(calculateWatchTime([5600]));
-console.log(calculateWatchTime([3600]));
-console.log(calculateWatchTime([30]));
-console.log(calculateWatchTime([60]));
-console.log(calculateWatchTime([5]));
-console.log(calculateWatchTime([3600]));
-console.log(calculateWatchTime([7200]));
-console.log(calculateWatchTime([7200.2]));
-console.log(calculateWatchTime([100, 3800, "90"]));
-console.log(typeof(.5))
+// console.log(calculateWatchTime([100, 99, 119, 300]));
+// console.log(calculateWatchTime([1000, 2000, 725]));
+// console.log(calculateWatchTime([100, 3800]));
+// console.log(calculateWatchTime([]));
+// console.log(calculateWatchTime([5600]));
+// console.log(calculateWatchTime([3600]));
+// console.log(calculateWatchTime([30]));
+// console.log(calculateWatchTime([60]));
+// console.log(calculateWatchTime([5]));
+// console.log(calculateWatchTime([3600]));
+// console.log(calculateWatchTime([7200]));
+// console.log(calculateWatchTime([7200.2]));
+// console.log(calculateWatchTime([100, 3800, "90"]));
+// console.log(typeof 0.5);
+// console.log(typeof 0);

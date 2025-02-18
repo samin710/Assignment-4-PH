@@ -48,3 +48,4 @@ function validEmail(email) {
 // console.log(validEmail("s"));
 // console.log(validEmail(5));
 // console.log(validEmail(" samin@gmail. com"));
+// console.log(validEmail("samin@gmailcom."));
